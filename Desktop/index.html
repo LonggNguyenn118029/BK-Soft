@@ -5,6 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BK Soft</title>
+  <script>
+    var minDesktopWidth = 1440;
+    var currentWidth = window.innerWidth;
+    console.log('Current width:', currentWidth); // Log the current width
+    if (currentWidth < minDesktopWidth) {
+      window.location.href = '../Mobile/index.html';
+    }
+    console.log(currentWidth)
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -580,7 +589,7 @@
       <div class="frame-f7">
         <span class="customer-feedback">Khách hàng nói gì về BKSoft</span>
       </div>
-      <section class="feedbacks-slide splide" aria-label="List feedback">
+      <section class="feedbacks-slide splide fb-slide-container" aria-label="List feedback">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">

@@ -5113,9 +5113,29 @@ button {
 
 /*  -------- Splide -------- */
 .products-slide {
-  width: 200%;
+  width: 140%;
+  /*background-color: black;*/
+  transform: translateX(-220px);
+  display: flex; /* Biến container thành flex container */
+  justify-content: center; /* Căn chỉnh theo chiều ngang */
+  align-items: center; /* Căn chỉnh theo chiều dọc */
 }
-
+.fb-slide-container{
+  width: 1470px;
+  transform: translateX(-195px);
+}
+.splide__track__feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.splide__track {
+  align-self: center;
+}
+.splide__list {
+  align-items: center;
+}
 /*  -------- List gallery -------- */
 .list-gallery {
   display: flex;

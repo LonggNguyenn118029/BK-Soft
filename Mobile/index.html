@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    var minDesktopWidth = 1440;
+    var currentWidth = window.innerWidth;
+    console.log('Current width:', currentWidth); // Log the current width0
+    if (currentWidth > minDesktopWidth) {
+      window.location.href = '../Desktop/index.html';
+    }
+    console.log(currentWidth)
+  </script>
 </head>
 
 <body>
